@@ -54,7 +54,7 @@ file2dataurl_process() {
 	file="$1"
 	[ ! -f "$file" ] && _fatal $e_no_file "No such file: $file"
 	mime="$( file -b --mime-type "$file" )"
-	_echo "data:${mime};base64,$( base64 "$file" | sed -E 's/=+$//' )"
+	_echo "data:${mime};base64,$( base64 < "$file" | sed -E 's/=+$//' )"
 }
 
 file2dataurl_version() {
