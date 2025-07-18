@@ -2,7 +2,7 @@
 
 By Rémino Rem <https://remino.net/>
 
-Create .htaccess file for Apache HTTPd to show a stylised directory index.
+Convert file to base64 data URL.
 
 [Code & Download](https://github.com/remino/file2dataurl/)
 
